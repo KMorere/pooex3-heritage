@@ -10,7 +10,8 @@ public class Employee extends Person {
 		setEmployer(_employer);
 		setSalary(_salary);
 	}
-
+	
+	//region get and set.
 	public String getEmployer() {
 		return employer;
 	}
@@ -30,14 +31,21 @@ public class Employee extends Person {
 			System.out.println("Salary must be above 0.");
 		}
 	}
+	//endregion
 	
+	/**
+	 * Override of the Remunerate method to get the salary of an Employee.
+	 */
 	@Override
 	public String Remunerate() {
 		this.setSalary(salary - this.charges);
 		return "Average salary of " + this.getName() + " " + this.getSurname() + 
 				" : " + this.getSalary();
 	}
-	
+
+	/**
+	 * Override of the toString method to display the Class correctly.
+	 */
 	@Override
 	public String toString() {
 		return "[Employee : " + this.getName() + " " + this.getSurname() +

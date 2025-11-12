@@ -8,6 +8,7 @@ public class Capital extends City{
 		setMonument(_monument);
 	}
 
+	//region get and set.
 	public String getMonument() {
 		return monument;
 	}
@@ -15,7 +16,11 @@ public class Capital extends City{
 	public void setMonument(String _name) {
 		this.monument = _name;
 	}
-	
+	//endregion
+
+	/**
+	 * Override of the toString method to display the Class correctly.
+	 */
 	@Override
 	public String toString() {
 		return "[City : " + this.getName() + ", " + this.getCountry() + ", monument : " + this.getMonument() + "]";

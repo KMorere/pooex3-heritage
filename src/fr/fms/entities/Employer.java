@@ -8,7 +8,8 @@ public class Employer {
 		setName(_name);
 		setEarning(_earning);
 	}
-	
+
+	//region get and set.
 	public String getName() {
 		return this.name;
 	}
@@ -24,4 +25,5 @@ public class Employer {
 	public void setEarning(int _earning) {
 		this.earning = _earning;
 	}
+	//endregion
 }

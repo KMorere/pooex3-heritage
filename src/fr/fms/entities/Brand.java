@@ -9,13 +9,19 @@ public class Brand extends Person {
 		this.employer = _employer;
 		this.rate = _rate;
 	}
-	
+
+	/**
+	 * Override of the Remunerate method to calculate the salary from a rate.
+	 */
 	@Override
 	public String Remunerate() {
 		return "Average salary of " + this.getName() + " " + this.getSurname() + 
 				" : " + (this.employer.getEarning() * this.rate / 100);
 	}
-	
+
+	/**
+	 * Override of the toString method to display the Class correctly.
+	 */
 	@Override
 	public String toString() {
 		return super.getName() + " " + super.getSurname() + ", " + 

@@ -21,8 +21,12 @@ public abstract class Person {
 		persons.add(this);
 	}
 	
+	/**
+	 * Abstract method used to remunerate a Person.
+	 */
 	public abstract String Remunerate();
 
+	//region get and set.
 	public String getName() {
 		return name;
 	}
@@ -67,7 +71,11 @@ public abstract class Person {
 	public void setPob(City pob) {
 		this.pob = pob;
 	}
+	//endregion
 	
+	/**
+	 * Override of the toString method to display the Class correctly.
+	 */
 	@Override
 	public String toString() {
 		return "Person : " + this.name + " " + 

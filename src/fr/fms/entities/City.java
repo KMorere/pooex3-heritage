@@ -33,6 +33,7 @@ public class City {
 		cities.add(this);
 	}
 	
+	//region get and set.
 	public String getName() {
 		return this.name;
 	}
@@ -59,19 +60,32 @@ public class City {
 		else
 			this.population = 0;
 	}
+	//endregion
 	
+	/**
+	 * Returns true if the current city matches the keyword.
+	 */
 	public boolean FilterCity(String _city) {
 		return this.name.equals(_city);
 	}
 	
+	/**
+	 * Returns true if the current country matches the keyword.
+	 */
 	public boolean FilterCountry(String _country) {
 		return this.country.equals(_country);
 	}
 	
+	/**
+	 * Display this city's values.
+	 */
 	public void Display() {
 		System.out.println("City : " + this.name + ", " + this.country + ", population of : " + this.population + ".");
 	}
 	
+	/**
+	 * Override of the toString method to display the city correctly.
+	 */
 	@Override
 	public String toString() {
 		String pop = (this.population > 0) ? ", population of : " + this.population : "";
