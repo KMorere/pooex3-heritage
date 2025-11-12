@@ -2,7 +2,7 @@ package fr.fms.entities;
 
 import java.util.ArrayList;
 
-public class Person {
+public abstract class Person {
 	public static ArrayList<Person> persons = new ArrayList<Person>();
 	
 	private String name;
@@ -20,6 +20,8 @@ public class Person {
 		
 		persons.add(this);
 	}
+	
+	public abstract String Remunerate();
 
 	public String getName() {
 		return name;

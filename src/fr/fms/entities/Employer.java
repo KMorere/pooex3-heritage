@@ -2,11 +2,11 @@ package fr.fms.entities;
 
 public class Employer {
 	private String name;
-	private float rate;
+	private int earning;
 	
-	public Employer(String _name, float _rate) {
+	public Employer(String _name, int _earning) {
 		setName(_name);
-		this.rate = _rate;
+		setEarning(_earning);
 	}
 	
 	public String getName() {
@@ -17,7 +17,11 @@ public class Employer {
 		this.name = _name;
 	}
 	
-	public float getRate() {
-		return this.rate;
+	public int getEarning() {
+		return this.earning;
+	}
+	
+	public void setEarning(int _earning) {
+		this.earning = _earning;
 	}
 }

@@ -13,10 +13,10 @@ public class Test {
 		
 		persons.add(new Employee("John", "Doe", 30, "Paris", new City("Paris", "France"), "FMS", 1400));
 		
-		persons.add(new Brand("Jane", "Doe", 30, "Paris", new City("Paris", "France"), new Employer("FMS", 5)));
+		persons.add(new Brand("Jane", "Doe", 30, "Paris", new City("Paris", "France"), new Employer("FMS", 50000), 5));
 		
 		for (Person person : persons) {
-			System.out.println(person);
+			System.out.println(person.Remunerate());
 		}
 	}
 }
